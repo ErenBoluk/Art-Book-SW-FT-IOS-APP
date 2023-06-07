@@ -114,7 +114,7 @@
                         <outlet property="artistText" destination="uvP-g5-MHO" id="eh0-DV-5O8"/>
                         <outlet property="imageView" destination="ybY-YC-PDk" id="dpf-jr-XBL"/>
                         <outlet property="nameText" destination="Ji7-eg-3gQ" id="4eR-eL-fC4"/>
-                        <outlet property="yearText" destination="Wlu-tl-DHy" id="6Ro-UE-YjD"/>
+                        <outlet property="yearText" destination="HYL-QJ-o1i" id="aJT-fo-iPL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBD-Uo-UM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
