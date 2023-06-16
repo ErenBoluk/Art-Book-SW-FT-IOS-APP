@@ -16,10 +16,19 @@ class detailVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     @IBOutlet weak var artistText: UITextField!
     @IBOutlet weak var yearText: UITextField!
     
+    var chosenPainting = ""
+    var chosenPaintingId : UUID?
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        if chosenPainting != ""	{
+            // coredara
+            let stringUUID = chosenPaintingId?.uuidString
+            print(stringUUID)
+            
+        }else{
+            
+        }
         
 //        Recognizers
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -63,22 +72,17 @@ class detailVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
         
         let data = imageView.image!.jpegData(compressionQuality: 0.5)
-        
-        
-        
         newPainting.setValue(data, forKey: "image")
-        
-        
-        
-        
         
         do {
             try context.save()
-            print("core-success")
         } catch  {
             print("core-error")
         }
         
+        NotificationCenter.default.post(name: NSNotification.Name("newData"), object: nil)
+        
+        self.navigationController?.popViewController(animated: true)
         
     }
 

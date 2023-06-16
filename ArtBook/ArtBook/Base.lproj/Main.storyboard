@@ -75,12 +75,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="save"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="S8M-0C-hUt" eventType="touchUpInside" id="NPC-6X-qad"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ebO-pS-btQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="woV-z6-H78"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="9ZF-cR-J7O" id="u8v-oG-WuF"/>
+                        <outlet property="dateLabel" destination="4bo-zY-ghs" id="odi-eL-M57"/>
+                        <outlet property="imageView" destination="kQJ-b0-Bfm" id="Yfr-oU-nKo"/>
+                        <outlet property="nameLabel" destination="XrA-fx-YaQ" id="AWa-ha-EPQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQR-wP-lP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
